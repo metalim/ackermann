@@ -1,9 +1,10 @@
 # Ackermann function
 
 Ackermann function A(m,n) is defined as follows:
-A(0,n) = n+1
-A(m,0) = A(m-1,1)
-A(m,n) = A(m-1,A(m,n-1)
+
+* A(0,n) = n+1
+* A(m,0) = A(m-1,1)
+* A(m,n) = A(m-1,A(m,n-1)
 
 By definition the function is computable and finite, but the only results computable in this universe are:
 * A(0,n)...A(3,n)
