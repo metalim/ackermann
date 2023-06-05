@@ -5,12 +5,12 @@ import (
 )
 
 func main() {
-	for i := 0; i < 6; i++ {
-		for j := 0; j < 6; j++ {
+	for i := 0; i <= 5; i++ {
+		for j := 0; j <= 20; j++ {
 			if i == 4 && j == 2 {
 				break
 			}
-			log.Println(i, j, len(ackermannCache), AckermannWithCache(i, j))
+			log.Printf("A(%d,%d) == %d, in cache: %d", i, j, AckermannWithCache(i, j), len(ackermannCache))
 		}
 	}
 }
